@@ -15,19 +15,19 @@ with open("README.md", encoding="utf8") as readme:
 
 # Setting up
 setup(
-    name="MukeshAPI",
+    name="MuizAPI",
     version=version(),
-    author="Mukesh | noob-mukesh",
-    author_email="itzcodermukesh@gmail.com",
-    description="python api hub | MukeshAPI",
+    author="Muiz | muiz-DEV",
+    author_email="muiz9060786@gmail.com",
+    description="python api hub | MuizAPI",
     long_description_content_type="text/markdown",
     long_description=long_desc,
     packages=find_packages(),
     license="MIT",
-    url="https://github.com/noob-mukesh/MukeshAPI",
-    download_url="https://github.com/Noob-mukesh/MukeshAPI/blob/main/README.md",
+    url="https://github.com/muiz12322/MuizAPI",
+    download_url="https://github.com/muiz12322/MuizAPI/blob/main/README.md",
     install_requires=["pytz>=2023.3","requests-html","pillow","lxml_html_clean"],
-    keywords=['python', "MukeshAPI","flask"],
+    keywords=['python', "MuizAPI","flask"],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
@@ -53,9 +53,9 @@ setup(
     ],
     
     project_urls={
-        "Tracker": "https://github.com/noob-mukesh/MukeshAPI/issues",
-        "Community": "https://t.me/mr_sukkun",
-        "Source": "https://github.com/noob-mukesh/MukeshAPI",
+        "Tracker": "https://github.com/muiz12322/MuizAPI/issues",
+        "Community": "https://t.me/eyymol",
+        "Source": "https://github.com/muiz12322/MuizAPI",
     },
     python_requires="~=3.7",
 )
