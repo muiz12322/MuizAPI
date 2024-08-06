@@ -12,7 +12,7 @@ from base64 import b64decode as m,b64encode as n
 from MuizAPI.words import wordshub
 from PIL import Image, ImageDraw, ImageFont
 from MuizAPI.truth_dare import TRUTH,DARE
-__version__ = "0.6.5.6"
+__version__ = "0.0.0.6"
 
 __all__ = ["api"]
 
@@ -21,7 +21,7 @@ class MuizAPI:
     
     def __init__(self)->None:
         """Api for various purpose
-    support group : https://t.me/the_support_chat
+    support : https://t.me/eyymol
     owner : @eyymol
         """
         pass
