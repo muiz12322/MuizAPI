@@ -11,7 +11,7 @@ from MuizAPI.func import (MORSE_CODE_DICT,payloads_response,gpt_4_mode,payload8)
 from base64 import b64decode as m,b64encode as n
 from MuizAPI.words import wordshub
 from PIL import Image, ImageDraw, ImageFont
-from MukeshAPI.truth_dare import TRUTH,DARE
+from MuizAPI.truth_dare import TRUTH,DARE
 __version__ = "0.6.5.6"
 
 __all__ = ["api"]
