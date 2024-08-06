@@ -7,9 +7,9 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import urllib
 from requests_html import HTMLSession
-from MukeshAPI.func import (MORSE_CODE_DICT,payloads_response,gpt_4_mode,payload8)
+from MuizAPI.func import (MORSE_CODE_DICT,payloads_response,gpt_4_mode,payload8)
 from base64 import b64decode as m,b64encode as n
-from MukeshAPI.words import wordshub
+from MuizAPI.words import wordshub
 from PIL import Image, ImageDraw, ImageFont
 from MukeshAPI.truth_dare import TRUTH,DARE
 __version__ = "0.6.5.6"
@@ -17,12 +17,12 @@ __version__ = "0.6.5.6"
 __all__ = ["api"]
 
 
-class MukeshAPI:
+class MuizAPI:
     
     def __init__(self)->None:
         """Api for various purpose
     support group : https://t.me/the_support_chat
-    owner : @mr_sukkun
+    owner : @eyymol
         """
         pass
     
@@ -38,7 +38,7 @@ class MukeshAPI:
             str: The response text from the datagpt API.
 
         Example usage:
-        >>> from MukeshAPI import api
+        >>> from MuizAPI import api
         >>> response = api.datagpt("What are the latest trends in AI?")
         >>> print(response)
         """
@@ -101,7 +101,7 @@ class MukeshAPI:
             requests.Response: The response object from the API request.
 
         Example usage:
-        >>> from MukeshAPI import api
+        >>> from MuizAPI import api
         >>> response = api.blackbox("Hello, how are you?")
         >>> print(response.text)
         {
@@ -160,7 +160,7 @@ class MukeshAPI:
             str: The response text from the chatgpt API.
 
         Example usage:
-        >>> from MukeshAPI import api
+        >>> from MuizAPI import api
         >>> response = api.chatgpt("hi babe?",mode="girlfriend")
         >>> print(response)
         """
@@ -195,7 +195,7 @@ class MukeshAPI:
         - str: A randomly generated password consisting of characters from string.ascii_letters, string.punctuation, and string.digits.
 
         Example usage:
-        >>> from MukeshAPI import api
+        >>> from MuizAPI import api
         >>> api.password()
         'r$6Ag~P{32F+'
         >>> api.password(10)
@@ -214,7 +214,7 @@ class MukeshAPI:
             : A random word from json file.
 
         Example usage:
-        >>> from MukeshAPI import api
+        >>> from MuizAPI import api
         >>> word = api.randomword()
         >>> print(word)
         """
@@ -234,7 +234,7 @@ class MukeshAPI:
             dict: A dictionary containing the generated content with metadata.
 
         Example usage:
-        >>> from MukeshAPI import api
+        >>> from MuizAPI import api
         >>> generated_content = api.gemini("Hello, how are you?")
         >>> print(generated_content)
         """
@@ -266,7 +266,7 @@ class MukeshAPI:
         str: A string of hashtags related to the given keyword.
         
         Example usage:
-        >>> from MukeshAPI import api
+        >>> from MuizAPI import api
         >>> keyword = "python"
         >>> hashtags = api.hashtag(keyword)
         >>> print(hashtags)
@@ -290,7 +290,7 @@ class MukeshAPI:
         str: The response from the chatbot based on the input text.
 
         Example usage:
-        >>> from MukeshAPI import api
+        >>> from MuizAPI import api
         >>> user_input = "Hello, how are you?"
         >>> response = api.chatbot(user_input)
         >>> print(response)
@@ -314,7 +314,7 @@ class MukeshAPI:
         dict: A dictionary containing the chapter number, verse text, chapter introduction, and the specified shalok text.
 
         Example usage:
-        >>> from MukeshAPI import api
+        >>> from MuizAPI import api
         >>> verse_data = api.bhagwatgita(1, 5)
         >>> print(verse_data)
         """
@@ -349,7 +349,7 @@ class MukeshAPI:
             actors, trailer link, and more.
 
         Example usage:
-        >>> from MukeshAPI import api
+        >>> from MuizAPI import api
         >>> movie_data = api.imdb("The Godfather")
         >>> print(movie_data)
         """
@@ -433,7 +433,7 @@ class MukeshAPI:
         str: The Morse code representation of the input string along with additional information. 🔠
 
     Example usage:
-    >>> from MukeshAPI import api
+    >>> from MuizAPI import api
     >>> encoded_result = api.morse_encode("Hello World")
     >>> print(encoded_result)
     """
@@ -464,7 +464,7 @@ class MukeshAPI:
         str: The decoded text from the Morse code.
 
     Example usage:
-    >>> from MukeshAPI import api
+    >>> from MuizAPI import api
     >>> decoded_result =api.morse_decode(".... . .-.. .-.. --- / .-- --- .-. .-.. -..")
     >>> print(decoded_result)
     """
@@ -486,7 +486,7 @@ class MukeshAPI:
         output = {
             "input": args,
             "results": decipher,
-            "join": "@Mr_Sukkun",
+            "join": "@eyymol",
             "success": True
         }
         return output
@@ -504,7 +504,7 @@ class MukeshAPI:
         list: List of image URLs related to the query.
         
     Example usage:
-    >>> from MukeshAPI import api
+    >>> from MuizAPI import api
     >>> response = api.unsplash("boy image")
     >>> print(response)
     
@@ -539,7 +539,7 @@ class MukeshAPI:
         dict: A dictionary containing user data such as streak, total active days, badges, user profile information, and social media URLs.
 
     Example usage:
-    >>> from MukeshAPI import api
+    >>> from MuizAPI import api
     >>> user_data = api.leetcode("noob-mukesh")
     >>> print(user_data)"""
         url = base64.b64decode('aHR0cHM6Ly9sZWV0Y29kZS5jb20vZ3JhcGhxbC8=').decode("utf-8")
@@ -645,7 +645,7 @@ class MukeshAPI:
         dict: A dictionary containing information about the specified package, such as name, version, description, author, license, and more.
 
     Example usage:
-    >>> from MukeshAPI import api
+    >>> from MuizAPI import api
     >>> package_info = api.pypi("requests")
     >>> print(package_info)
     """
@@ -667,7 +667,7 @@ class MukeshAPI:
         dict: A dictionary containing search results of GitHub repositories. Each entry includes an index and corresponding repository.
 
     Example usage:
-    >>> from MukeshAPI import api
+    >>> from MuizAPI import api
     >>> search_results = api.repo("MukeshRobot")
     >>> print(search_results)
     """
@@ -694,7 +694,7 @@ class MukeshAPI:
         dict: A dictionary containing search results of GitHub username .
 
     Example usage:
-    >>> from MukeshAPI import api
+    >>> from MuizAPI import api
     >>> search_results = api.github("noob-mukesh")
     >>> print(search_results)
     """
@@ -743,7 +743,7 @@ class MukeshAPI:
         dict: A dictionary containing search results of meme
         
         Example usage:
-        >>> from MukeshAPI import api
+        >>> from MuizAPI import api
         >>> search_results = api.meme()
         >>> print(search_results)
         """
@@ -767,7 +767,7 @@ class MukeshAPI:
             dict: JSON response containing weather data for the specified city.
 
         Example usage:
-        >>> from MukeshAPI import api
+        >>> from MuizAPI import api
         >>> weather_data = api.weather("Bihar")
         >>> print(weather_data)
         """
@@ -787,7 +787,7 @@ class MukeshAPI:
         str: The URL of the uploaded image.
         
     Example usage:
-        >>> from MukeshAPI import api
+        >>> from MuizAPI import api
         >>> upload_image = api.upload_image(image_url="url-of-img.jpg")
         >>> print(upload_image)
     """
@@ -827,7 +827,7 @@ class MukeshAPI:
             bytes: The generated image in bytes format.
             
         Example usage:
-        >>> from MukeshAPI import api
+        >>> from MuizAPI import api
         >>> generated_image= api.ai_image("boy image")
         >>> print(generated_image)
         """
